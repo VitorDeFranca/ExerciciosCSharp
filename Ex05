@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex05
+{
+
+    /* Questão 5: Sabendo que o latão é obtido fundindo-se sete partes de cobre com três partes de zinco,
+escreva um programa que solicite quantos quilos de latão um usuário quer produzir. A seguir o
+programa informa ao usuário as quantidades de cobre e zinco necessárias.
+ */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double kilo;
+
+            Console.WriteLine("Informe a quantidade de latão a ser produzida: ");
+            kilo = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"A quantidade de cobre necessária para produzir {kilo}kg de latão é de {kilo * 0.7}kg");
+            Console.WriteLine($"A quantidade de zinco necessária para produzir {kilo}kg de latão é de {kilo * 0.3}kg");
+
+            Console.ReadKey();
+        }
+    }
+}
