@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex07
+{
+
+    /*Questão 7: Codifique um programa que leia dois números inteiros e calcule a soma desses dois
+números. O programa somente imprimirá o resultado da soma quando a soma for maior que 10. Se a
+soma for menor ou igual a 10, o programa imprime uma mensagem de aviso ao usuário. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+
+            Console.WriteLine("Insira um número inteiro: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Insira outro número inteiro: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 + num2 > 10)
+            {
+                Console.WriteLine($"A soma de {num1} e {num2} é igual a {num1 + num2}!");
+            }
+            else
+            {
+                Console.WriteLine($"A soma de {num1} e {num2} é menor ou igual a 10, tente novamente");
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
