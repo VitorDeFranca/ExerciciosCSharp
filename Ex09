@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex09
+{
+
+    /* Questão 9: Codifique um programa que faça a leitura de um número inteiro pelo teclado. O programa
+deve exibir uma mensagem de texto identificando o número como “POSITIVO”,“NEGATIVO” ou
+“NULO” no caso do valor 0.*/
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.WriteLine("Insira um número: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num > 0)
+            {
+                Console.WriteLine($"O número {num} é POSITIVO!");
+            }
+            else if (num < 0)
+            {
+                Console.WriteLine($"O número {num} é NEGATIVO!");
+            }
+            else
+            {
+                Console.WriteLine($"O número {num} é NULO!");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
