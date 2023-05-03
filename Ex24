@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex24
+{
+    /* Questão 24: Criar uma função que determine se um caractere, recebido como parâmetro, é ou não
+uma letra do alfabeto. A função deve retornar 1 caso positivo e 0 em caso contrário. Escreva também
+um programa para testar tal função. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char a;
+            Console.WriteLine("Insira um caractere: ");
+            a = Convert.ToChar((Console.ReadLine().ToLower()));
+
+            switch (LetraAlfabeto(a))
+            {
+                case 0:
+                    Console.WriteLine($"{a} não é uma letra do alfabeto!");
+                    break;
+                case 1:
+                    Console.WriteLine($"{a} é uma letra do alfabeto!");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+
+        static int LetraAlfabeto(char a)
+        {
+            string alfabeto = "abcdefghijklmnopqrstuvwxyz";
+            if (alfabeto.Contains(a) == true)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+}
