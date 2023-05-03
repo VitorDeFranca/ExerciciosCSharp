@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex08
+{
+
+    /*Questão 8: Codifique um programa que faça a leitura de um número inteiro pelo teclado. A seguir, o
+programa determina se o número é par ou impar, imprimindo uma mensagem para o usuário. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.WriteLine("Insira um número inteiro: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            if (num % 2 == 0)
+            {
+                Console.WriteLine($"O número {num} é par!");
+            } 
+            else 
+            {
+                Console.WriteLine($"O número {num} é ímpar!");
+            }
+            Console.ReadKey();
+        }
+    }
+}
