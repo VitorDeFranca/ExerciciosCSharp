@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex03
+{
+    /* Questão 3: Codifique um programa para realizar a conversão de uma temperatura em graus Celsius
+para graus Fahrenheit. O programa recebe com entrada a temperatura em Celsius e exibe o
+resultado da conversão para o usuário. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double tempC, tempF;
+
+            Console.WriteLine("Insira a temperatura em graus Celsius; ");
+            tempC = Convert.ToDouble(Console.ReadLine());
+
+            tempF = ((tempC * 9/5) + 32);
+            Console.WriteLine($"A temperatura em graus Fahrenheit é {tempF}ºF");
+            Console.ReadKey();
+
+
+       
+        }
+    }
+}
