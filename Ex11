@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex11
+{
+
+    /* Questão 11: Codifique um programa que solicite ao usuário três valores, a saber: A, B e C. O
+programa deve imprimir os valores em ordem crescente (do menor para o maior). */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, menor, maior, intermediario;
+
+            Console.WriteLine("Insira um número: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira outro número: ");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira o último número: ");
+            c = Convert.ToDouble(Console.ReadLine());
+
+            if (a < b && a < c)
+            {
+                menor = a;
+            }
+            else if (b < c && b < a)
+            {
+                menor = b;
+            }
+            else
+            {
+                menor = c;
+            }
+            if (a > b && a > c)
+            {
+                maior = a;
+            }
+            else if (b > c && b > a)
+            {
+                maior = b;
+            }
+            else
+            {
+                maior = c;
+            }
+            intermediario = a + b + c - maior - menor;
+
+            Console.WriteLine($"Segue os valores em ordem crescente: {menor}, {intermediario}, {maior}");
+            Console.ReadKey();
+
+        }
+    }
+}
