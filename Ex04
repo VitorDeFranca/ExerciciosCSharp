@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex04
+{
+
+    /* Questão 4: Certa importância em dólares será dividida entre três pessoas. A primeira receberá 30%
+da quantia total; a segunda 38% e a terceira 32%. Codifique um programa que leia o valor total da
+importância em dólares e calcule a parcela destinada a cada pessoa.
+ */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double importancia;
+
+            Console.WriteLine("Insira o valor em reais da importância que será repartida: ");
+            importancia = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"A primeira pessoa receberá R${importancia * 0.3}");
+            Console.WriteLine($"A segunda pessoa receberá R${importancia * 0.38}");
+            Console.WriteLine($"A terceira pessoa receberá R${importancia * 0.32}");
+            Console.ReadKey();
+        }
+    }
+}
