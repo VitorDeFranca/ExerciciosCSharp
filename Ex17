@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex17
+{
+    /* Questão 17: Escreva um programa que receba dez números do usuário e imprima o quadrado de
+cada número. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i<=10; i++)
+            {
+                double num;
+                Console.WriteLine("Insira um número; ");
+                num = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine($"O quadrado de {num} é {Math.Pow(num, 2)}");
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
