@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex06
+{
+
+    /* Questão 6: Codifique um programa que faça a entrada de um número qualquer pelo teclado. A
+seguir o programa imprime uma mensagem textual somente se ele for maior que 20. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double num;
+
+            Console.WriteLine("Insira um número: ");
+            num = Convert.ToDouble(Console.ReadLine());
+
+            if (num > 20)
+            {
+                Console.WriteLine($"{num} é maior do que 20!");
+                Console.ReadKey();
+            }
+        }
+    }
+}
