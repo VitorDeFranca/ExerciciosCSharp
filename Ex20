@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex20
+{
+    /* Questão 20: Seja a seguinte série:
+1, 4, 9, 16, 25, 36, ...
+Escreva um programa que gere esta série até o N-ésimo termo. Este N-ésimo termo é digitado pelo
+usuário. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.WriteLine("Insira o número de termos da sequêcia: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= num; i++)
+            {
+                if (i == num) {
+                    Console.Write($"{Math.Pow(i, 2)}.");
+                }
+                else
+                {
+                    Console.Write($"{Math.Pow(i, 2)}, ");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
