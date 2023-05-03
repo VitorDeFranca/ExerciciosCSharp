@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex23
+{
+    /* Questão 23: Escreva um procedimento que gere um cabeçalho para um relatório. Esse
+procedimento deve receber um literal (string, ou cadeia de caracteres) como parâmetro. O cabeçalho
+tem a seguinte forma:
+============================================
+UFMG – Universidade Federal de Minas Gerais
+ICEx – Instituto de Ciências Exatas
+Disciplina de Programação de Computadores
+Nome: Fulano de Tal
+============================================ ,
+onde Fulano de Tal, corresponde ao parâmetro passado. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome;
+
+            Console.WriteLine("Informe o nome do aluno: ");
+            nome = Console.ReadLine();
+
+            Cabecalho(nome);
+
+            Console.ReadKey();
+        }
+
+        static void Cabecalho(string nome)
+        {
+            Console.WriteLine($"============================================\nUFMG – Universidade Federal de Minas Gerais\nICEx – Instituto de Ciências Exatas\nDisciplina de Programação de Computadores\nNome: {nome}\n============================================");
+        }
+    }
+}
