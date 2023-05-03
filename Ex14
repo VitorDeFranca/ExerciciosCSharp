@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex14
+{
+
+    /* Questão 14: Codifique um programa que faça a leitura de dois números reais pelo teclado, (X) e (Y),
+respectivamente. O programa imprime o quadrado do menor número, e a raiz quadrada do maior
+número, quando for possível. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double x, y, menor, maior;
+
+            Console.WriteLine("Insira um número real: ");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Insira outro número real: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            menor = Math.Min(x, y);
+            maior = x + y - menor;
+
+            Console.WriteLine($"O valor de {menor} ao quadrado é {Math.Pow(menor, 2)}!");
+            Console.WriteLine($"o valor da raiz quadrada de {maior} é {Math.Sqrt(maior)}");
+            Console.ReadKey();
+        }
+    }
+}
