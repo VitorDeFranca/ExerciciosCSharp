@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex16
+{
+    /* Questão 16: Escreva um programa que imprima todos os números inteiros de 100 a 200. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 100; i<=200; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+        }
+    }
+}
