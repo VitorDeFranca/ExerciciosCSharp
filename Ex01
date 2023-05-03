@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ex01
+{
+    /* Questão 1: Codifique um programa que leia um número inteiro qualquer e imprima o seu sucessor e
+    seu antecessor. */
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+
+            Console.WriteLine("Escolha um número inteiro qualquer: ");
+            num = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Seu número é {num}, seu antecessor é {num - 1} e seu sucessor {num + 1}!");
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
